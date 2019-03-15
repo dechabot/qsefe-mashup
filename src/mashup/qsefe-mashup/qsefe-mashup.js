@@ -13,7 +13,7 @@ var config = {
 	isSecure: window.location.protocol === "https:"
 };
 require.config( {
-	baseUrl: ( config.isSecure ? "https://" : "http://" ) + config.host + (config.port ? ":" + config.port : "") + config.prefix + "resources"
+	baseUrl: ( config.isSecure ? "https://" : "http://" ) + config.host + (config.port ? ":" + config.port : "") + "/" + "resources"
 } );
 
 require( ["js/qlik"], function ( qlik ) {
